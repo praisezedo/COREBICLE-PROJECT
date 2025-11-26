@@ -27,7 +27,7 @@
 <button class="bg-red-700 text-white font-bold rounded-[10px] border-none p-3 hover:bg-red-300 transition-all">Book Now</button>
 </header>
 <section class="border-1 border-gray-300 px-[20px] py-[30px] max-w-[1000px] mx-auto rounded-[20px] mt-[170px] mb-[100px] shadow-lg justify-center">
-<div class="justify-center flex-column text-center items-center">
+<form class="justify-center flex-column text-center items-center">
 <h1 class="font-bold text-[3rem] my-[10px]">Book Your WorkSpace</h1>
 <p class="my-[10px] text-gray-500">Reserve your professional space with Corebicle today.</p>
 </div>
@@ -59,42 +59,86 @@
 
 </div>
 </div>
-<div class="justify-center items-center flex-column text-center">
-<h1 class="font-bold text-[1.2rem] my-[10px]">Booking Duration</h1>
+<div class="justify-center items-center flex-column text-center my-[40px]">
+<h1 class="font-bold text-[1.2rem] my-[10px] my-[20px]">Booking Duration</h1>
 <div class="grid grid-cols-3 gap-[15px]">
-    <div>
+    <div class="flex-column">
         <h1>Date</h1>
-        <input type="date" id="date-input">
+        <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="date" id="date-input">
     </div>
     <div>
         <h1>Start Time</h1>
-        <input type="text" placeholder="e.g 09:00 AM">
+        <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="text" placeholder="e.g 09:00 AM">
     </div>
     <div>
         <h1>End Time</h1>
-        <input type="text" placeholder="e.g 09:00 PM">
+        <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="text" placeholder="e.g 09:00 PM">
     </div>
 </div>
-<div>
-    <h1>Your Contact Information</h1>
-    <div>
+<div class="flex-column">
+    <h1 class="font-bold text-[1.2rem] my-[30px]">Your Contact Information</h1>
+    <div class="grid grid-cols-2">
         <div>
-            <h1>Full Name</h1>
-            <input type="text" placeholder="Your Full Name">
+            <h1 class="my-[20px]">Full Name</h1>
+            <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="text" placeholder="Your Full Name">
         </div>
         <div>
-            <h1>Email Address</h1>
-            <input type="email" placeholder="john.doe@example.com">
+            <h1 class="my-[20px]">Email Address</h1>
+            <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="email" placeholder="john.doe@example.com">
         </div>
-        <div>
-            <h1>Phone Number</h1>
-            <input type="tel" placeholder="+1234567890 OR +2345678901011">
+        <div class="item-center text-center justify-center flex-column">
+            <h1 class="my-[20px]">Phone Number</h1>
+            <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[300px]"type="tel" placeholder="+1234567890 OR +2345678901011">
         </div>
     </div>
 
-    <button>Confirm Booking</button>
+    <button class="bg-red-700 text-white p-[10px] rounded-[10px] my-[40px] hover:bg-red-300 transition-all">Confirm Booking</button>
 </div>
-</div>
+</form>
 </section>
+
+<section class="flex-column items-center text-center justify-center mt-[70px] bg-gray-100 p-[30px]">
+    <div class="grid grid-cols-4">
+<div class="p-[10px] mb-[30px]">
+    <span class="flex items-center space-x-2 justify-center">
+<svg  height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-shadow-lg top-0 buttom-0">
+<polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="red" stroke-width="7" fill="none"/>
+<path d="M50 5 Q50 50 50 95" stroke="red" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>
+<h1 class="text-[40px] font-bold text-red-700 text-shadow-lg my-[10px]">Corebicle</h1>
+</span>
+
+<p class="justify-center">Your dedicated space for productivity and innovation.</p>
+</div>
+<div class="flex-column items-center text-center mb-[20px]">
+    <h4 class="font-bold text-[1.5rem] mb-[20px]">Company</h4>
+<div class="grid grid-cols-1 gap-[7px]">
+<a href="#" class=" text-[1.1rem] hover:text-red-700">Home</a>
+<a href="#" class=" text-[1.1rem] hover:text-red-700">Services</a>
+<a href="#" class=" text-[1.1rem] hover:text-red-700">Booking</a>
+<a href="#" class=" text-[1.1rem] hover:text-red-700">Contact Us</a>
+</div>
+</div>
+<div class="flex-column justify-center">
+    <h4 class="mb-[20px] font-bold text-[1.5rem]">Services</h4>
+    <p class="text-[1.1rem] mb-[10px]">Workspace Rental</p>
+    <p class="text-[1.1rem] mb-[10px]">Internet Connection</p>
+    <p class="text-[1.1rem] mb-[10px]">Electricity Supply</p>
+</div>
+<div class="flex-column">
+    <h4 class="mb-[20px] font-bold text-[1.5rem]">Follow Us</h4>
+    <nav class="grid grid-cols-4 gap-[4px]">
+        <a href="#"><i class="fa-brands fa-facebook text-red-700 rounded-full transition-all" style="font-size: 40px;"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter text-red-700 rounded-full transition-all" style="font-size: 40px;"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram text-red-700 rounded-full transition-all" style="font-size: 40px;"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp text-red-700 rounded-full transition-all" style="font-size: 40px;"></i></a>
+    </nav>
+</div>
+    </div>
+</section>
+
+<footer class="py-[20px] bg-gray-100 border-t-2 border-black">
+    <div class="flex items-center text-center justify-center mt-[10px]"><p>&copy; 2025 Corebicle. All right reserved.</p></div> 
+</footer>
 </body>
 </html>
