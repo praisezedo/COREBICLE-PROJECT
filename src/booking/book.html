@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK A SPACE</title>
+    <link rel="stylesheet" href="book.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!--Header secton-->
+<header class="flex justify-between items-center p-3 mb-black  border-b border-black fixed top-0 left-0 right-0 bg-white z-20">
+<span class="flex items-center space-x-2">
+<svg  height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12">
+<polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="red" stroke-width="7" fill="none"/>
+<path d="M50 5 Q50 50 50 95" stroke="red" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>
+<h1 class="text-[40px] font-bold text-red-700 text-shadow-lg">Corebicle</h1>
+</span>
+<nav class="flex gap-[20px]">
+<a href="#" class="font-bold text-2xl hover:text-red-700 transition-all">Home</a>
+<a href="#" class="font-bold text-2xl hover:text-red-700 transition-all">Services</a>
+<a href="#" class="font-bold text-2xl hover:text-red-700 transition-all">Booking</a>
+<a href="#" class="font-bold text-2xl hover:text-red-700 transition-all">Contact Us</a>
+</nav>
+<button class="bg-red-700 text-white font-bold rounded-[10px] border-none p-3 hover:bg-red-300 transition-all">Book Now</button>
+</header>
+<section class="border-1 border-gray-300 px-[20px] py-[30px] max-w-[1000px] mx-auto rounded-[20px] mt-[170px] mb-[100px] shadow-lg justify-center">
+<div class="justify-center flex-column text-center items-center">
+<h1 class="font-bold text-[3rem] my-[10px]">Book Your WorkSpace</h1>
+<p class="my-[10px] text-gray-500">Reserve your professional space with Corebicle today.</p>
+</div>
+<div class="flex-column justify-center items-center flex-column text-center">
+<h1 class="font-bold text-[2rem] my-[40px]">Workspace Details</h1>
+<div class="justify-center items-center flex-column text-center">
+<h1 class="font-bold text-[1.2rem] my-[10px]">Workspace Type</h1>
+<select class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[500px] mx-auto mb-[40px]" name="workspace" id="workspace-input">
+<option value="regular-space">Regular Space</option>
+<option value="private-space">Private Space</option>
+<option value="premium-space">Premium Space</option>
+<option value="private-office">Private Office</option>
+</select>
+
+<div class="flex gap-[40px] text-center justify-center">
+    <div class="grid grid-cols-1 gap-[20px] text-center justify-center"> 
+     <label for="amount" class="">Amount</label>
+    <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[300px] mx-auto" type="text" name="amount" id="amount" placeholder="Amount" readonly>
+</div>
+<div class="grid grid-cols-1 gap-[20px]">
+    <label for="payment-currency">Currency</label>
+    <select class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[300px] mx-auto" name="currency" id="currency">
+        <option value="naira">₦ - Naira</option>
+        <option value="dollars">$ - Dollars</option>
+        <option value="yen">¥ - Yen</option>
+    </select> 
+</div>
+</div>
+
+</div>
+</div>
+<div class="justify-center items-center flex-column text-center">
+<h1 class="font-bold text-[1.2rem] my-[10px]">Booking Duration</h1>
+<div class="grid grid-cols-3 gap-[15px]">
+    <div>
+        <h1>Date</h1>
+        <input type="date" id="date-input">
+    </div>
+    <div>
+        <h1>Start Time</h1>
+        <input type="text" placeholder="e.g 09:00 AM">
+    </div>
+    <div>
+        <h1>End Time</h1>
+        <input type="text" placeholder="e.g 09:00 PM">
+    </div>
+</div>
+<div>
+    <h1>Your Contact Information</h1>
+    <div>
+        <div>
+            <h1>Full Name</h1>
+            <input type="text" placeholder="Your Full Name">
+        </div>
+        <div>
+            <h1>Email Address</h1>
+            <input type="email" placeholder="john.doe@example.com">
+        </div>
+        <div>
+            <h1>Phone Number</h1>
+            <input type="tel" placeholder="+1234567890 OR +2345678901011">
+        </div>
+    </div>
+
+    <button>Confirm Booking</button>
+</div>
+</div>
+</section>
+</body>
+</html>
