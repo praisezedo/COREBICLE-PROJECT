@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ <header class="flex justify-between items-center p-3 mb-black  border-b border-black fixed top-0 left-0 right-0 bg-white z-20">
+    <span class="flex items-center space-x-2">
+<svg  height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12">
+<polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="red" stroke-width="7" fill="none"/>
+<path d="M50 5 Q50 50 50 95" stroke="red" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>
+<h1 class="text-[40px] font-bold text-red-700 text-shadow-lg">Corebicle</h1>
+</span>
+<nav class="flex gap-[20px]">
+<a href="../index.html" class="font-bold text-2xl hover:text-red-700 transition-all">Home</a>
+<a href="../services/service.html" class="font-bold text-2xl hover:text-red-700 transition-all">Services</a>
+<a href="../booking/book.html" class="font-bold text-2xl hover:text-red-700 transition-all">Booking</a>
+<a href="../contact/contact.html" class="font-bold text-2xl hover:text-red-700 transition-all">Contact Us</a>
+</nav>
+<button class="bg-red-700 text-white font-bold rounded-[10px] border-none p-3 hover:bg-red-300 transition-all hover:cursor-pointer">Book Now</button>
+</header>
+<section class="mt-[170px] px-[100px] flex-column mb-[100px]">
+
+<div class="flex-column text-center">
+<h1 class="font-bold text-[3rem] my-[10px]">Get in Touch</h1>
+<p>We'd love to hear from you.Reach out to us through any of the channels below.</p>
+</div>
+
+<div class="grid grid-cols-2 gap-[100px]">
+<div>
+<h1 class="font-bold text-[2rem] my-[50px]">Our Office</h1>
+
+<div class="flex gap-[40px] mb-[70px]">
+<i class="fa-solid fa-location-dot text-red-700" style="font-size: 64px;"></i>
+<div  class="flex-column">
+<h1 class="font-bold text-[1.2rem]  mb-[10px]">Our Location</h1>
+    <p>SUG Resource Center , FUTO Owerri.</p>
+</div>
+</div>
+
+<div class="flex gap-[40px] mb-[70px]">
+<i class="fas fa-phone text-red-700" style="font-size: 64px;"></i>
+<div class="flex-column">
+<h1 class="font-bold text-[1.2rem]  mb-[10px]">Phone Number</h1>
+    <p>+234 913 372 5947</p>
+</div>
+</div>
+
+<div class="flex gap-[40px] mb-[70px]">
+<i class="fas fa-envelope text-red-700" style="font-size: 64px;"></i>
+<div class="flex-column">
+<h1 class="font-bold text-[1.2rem] mb-[10px]">Email Adress</h1>
+    <p>contact@corebicle.com</p>
+</div>
+</div>
+
+<div class="my-[50px]">
+<img class="w-[500px] rounded-[20px] hover:opacity-25 transition-all" src="../images/corebiclelocationimg.jpg" alt="location">
+</div>
+
+<div class="flex-column">
+<h1 class="flex gap-[20px] mb-[20px] text-[2rem] font-bold">Connect with Us</h1>
+<div class="flex gap-[40px]">
+    <a href="#" class="hover:scale-110 duration-300 transition-all"><i class="fab fa-facebook text-red-700" style="font-size: 48px;"></i></a>
+    <a href="#" class="hover:scale-110 duration-300 transition-all"><i class="fab fa-twitter text-red-700" style="font-size: 48px;"></i></a>
+    <a href="#" class="hover:scale-110 duration-300 transition-all"><i class="fab fa-instagram text-red-700" style="font-size: 48px;"></i></a>
+    <a href="#" class="hover:scale-110 duration-300 transition-all"><i class="fab fa-whatsapp text-red-700" style="font-size: 48px;"></i></a>
+</div>
+</div>
+</div>
+
+<form class="grid grid-cols-1 mt-[70px] border border-gray-300 px-[50px] rounded-[10px] shadow-lg items-center justify-center text-center">
+    <div class=" my-[30px] flex-column text-center">
+        <h1 class="text-[2rem] my-[10px] font-bold mt-[20px] hover:cursor-pointer">Send Us a Message</h1>
+        <p class="my-[10px]">Fill out the form below and we'll get to you shortly.</p>
+    </div>
+    <div class=" mb-[40px] grid grid-cols-1 text-center justify-center">
+       <label class="mb-[10px]" for="name">Name</label>
+       <input class="border border-gray-300 rounded-[10px] p-[10px]" type="text" placeholder="Your Name" id="name" required> 
+    </div>
+    <div class=" mb-[40px] grid grid-cols-1 text-center justify-center">
+         <label class="mb-[10px]" for="email">Email</label>
+         <input class="border border-gray-300 rounded-[10px] p-[10px]" type="email" placeholder="your@example.com" id="email" required>
+    </div>
+    <div class=" mb-[40px] grid grid-cols-1 text-center justify-center">
+        <label class="mb-[10px]" for="subject">Subject</label>
+        <input class="border border-gray-300 rounded-[10px] p-[10px]" type="text" placeholder="Inquiry about..." name="subject" id="subject" required>
+    </div>
+    <div class="mb-[40px] grid grid-cols-1 text-center justify-center">
+        <label class="mb-[10px]" for="message">Message</label>
+        <textarea class="border border-gray-300 rounded-[10px] p-[20px]" name="message" id="message" placeholder="Your Message..."></textarea>
+    </div>
+
+    <button class="mb-[50px] text-white p-[10px] rounded-[10px] bg-red-700 hover:bg-red-300 transition-all hover:cursor-pointer">Send Message</button>
+</form>
+</div>
+</section>
+
+<section class="flex-column items-center text-center justify-center mt-[70px] bg-gray-100 p-[30px]">
+    <div class="grid grid-cols-4">
+<div class="p-[10px] mb-[30px]">
+    <span class="flex items-center space-x-2 justify-center">
+<svg  height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-shadow-lg top-0 buttom-0">
+<polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="red" stroke-width="7" fill="none"/>
+<path d="M50 5 Q50 50 50 95" stroke="red" stroke-width="7" fill="none" stroke-linecap="round"/>
+</svg>
+<h1 class="text-[40px] font-bold text-red-700 text-shadow-lg my-[10px]">Corebicle</h1>
+</span>
+
+<p class="justify-center">Your dedicated space for productivity and innovation.</p>
+</div>
+<div class="flex-column items-center text-center mb-[20px]">
+    <h4 class="font-bold text-[1.5rem] mb-[20px]">Company</h4>
+<div class="grid grid-cols-1 gap-[7px]">
+<a href="../index.html" class=" text-[1.1rem] hover:text-red-700">Home</a>
+<a href="../services/service.html" class=" text-[1.1rem] hover:text-red-700">Services</a>
+<a href="../booking/book.html" class=" text-[1.1rem] hover:text-red-700">Booking</a>
+<a href="./contact.html" class=" text-[1.1rem] hover:text-red-700">Contact Us</a>
+</div>
+</div>
+<div class="flex-column justify-center">
+    <h4 class="mb-[20px] font-bold text-[1.5rem]">Services</h4>
+    <p class="text-[1.1rem] mb-[10px]">Workspace Rental</p>
+    <p class="text-[1.1rem] mb-[10px]">Internet Connection</p>
+    <p class="text-[1.1rem] mb-[10px]">Electricity Supply</p>
+</div>
+<div class="flex-column">
+    <h4 class="mb-[20px] font-bold text-[1.5rem]">Follow Us</h4>
+    <nav class="grid grid-cols-4 gap-[4px]">
+        <a href="#" class="hover:scale-110 duration-300"><i class="fa-brands fa-facebook text-red-700 rounded-full transition-all" style="font-size: 40px;"></i></a>
+        <a href="#" class="hover:scale-110 duration-300"><i class="fa-brands fa-twitter text-red-700 rounded-full transition-all" style="font-size: 40px;"></i></a>
+        <a href="#" class="hover:scale-110 duration-300"><i class="fa-brands fa-instagram text-red-700 rounded-full transition-all" style="font-size: 40px;"></i></a>
+        <a href="#" class="hover:scale-110 duration-300"><i class="fa-brands fa-whatsapp text-red-700 rounded-full transition-all" style="font-size: 40px;"></i></a>
+    </nav>
+</div>
+    </div>
+</section>
+
+<footer class="py-[20px] bg-gray-100 border-t-2 border-black">
+    <div class="flex items-center text-center justify-center mt-[10px]"><p>&copy; 2025 Corebicle. All right reserved.</p></div> 
+</footer>
+</body>
+</html>
