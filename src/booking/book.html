@@ -26,8 +26,9 @@
 </nav>
 <button class="bg-red-700 text-white font-bold rounded-[10px] border-none p-3 hover:bg-red-300 transition-all hover:cursor-pointer">Book Now</button>
 </header>
+<!--form secion -->
 <section class="border-1 border-gray-300 px-[20px] py-[30px] max-w-[1000px] mx-auto rounded-[20px] mt-[170px] mb-[100px] shadow-lg justify-center">
-<form class="justify-center flex-column text-center items-center">
+<form class="justify-center flex-column text-center items-center scroll-animation-up translate-y-20 transition-all duration-[2s] opacity-0">
 <h1 class="font-bold text-[3rem] my-[10px]">Book Your WorkSpace</h1>
 <p class="my-[10px] text-gray-500">Reserve your professional space with Corebicle today.</p>
 </div>
@@ -99,7 +100,7 @@
 
 <section class="flex-column items-center text-center justify-center mt-[70px] bg-gray-100 p-[30px]">
     <div class="grid grid-cols-4">
-<div class="p-[10px] mb-[30px]">
+<div class="p-[10px] mb-[30px] scroll-animation-side -translate-x-20 transition-all duration-[2s] opacity-0">
     <span class="flex items-center space-x-2 justify-center">
 <svg  height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-shadow-lg top-0 buttom-0">
 <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="red" stroke-width="7" fill="none"/>
@@ -110,22 +111,22 @@
 
 <p class="justify-center">Your dedicated space for productivity and innovation.</p>
 </div>
-<div class="flex-column items-center text-center mb-[20px]">
+<div class="flex-column items-center text-center mb-[20px] scroll-animation-up translate-y-20 transition-all duration-[2s] opacity-0">
     <h4 class="font-bold text-[1.5rem] mb-[20px]">Company</h4>
 <div class="grid grid-cols-1 gap-[7px]">
 <a href="../index.html" class=" text-[1.1rem] hover:text-red-700">Home</a>
 <a href="../services/service.html" class=" text-[1.1rem] hover:text-red-700">Services</a>
-<a href="../booking/book.html" class=" text-[1.1rem] hover:text-red-700">Booking</a>
+<a href="./book.html" class=" text-[1.1rem] hover:text-red-700">Booking</a>
 <a href="../contact/contact.html" class=" text-[1.1rem] hover:text-red-700">Contact Us</a>
 </div>
 </div>
-<div class="flex-column justify-center">
+<div class="flex-column justify-center scroll-animation-up translate-y-20 transition-all duration-[2s] opacity-0">
     <h4 class="mb-[20px] font-bold text-[1.5rem]">Services</h4>
     <p class="text-[1.1rem] mb-[10px]">Workspace Rental</p>
     <p class="text-[1.1rem] mb-[10px]">Internet Connection</p>
     <p class="text-[1.1rem] mb-[10px]">Electricity Supply</p>
 </div>
-<div class="flex-column">
+<div class="flex-column scroll-animation-side translate-x-20 transition-all duration-[2s] opacity-0">
     <h4 class="mb-[20px] font-bold text-[1.5rem]">Follow Us</h4>
     <nav class="grid grid-cols-4 gap-[4px]">
         <a href="#" class="hover:scale-110 duration-300"><i class="fa-brands fa-facebook text-red-700 rounded-full transition-all" style="font-size: 40px;"></i></a>
@@ -140,5 +141,6 @@
 <footer class="py-[20px] bg-gray-100 border-t-2 border-black">
     <div class="flex items-center text-center justify-center mt-[10px]"><p>&copy; 2025 Corebicle. All right reserved.</p></div> 
 </footer>
+<script src="../dist/book-ts/book.js"></script>
 </body>
 </html>
