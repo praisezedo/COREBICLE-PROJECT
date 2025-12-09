@@ -27,3 +27,13 @@ const sideobserver = new IntersectionObserver(entries => {
    scrollSide.forEach(element => {
     sideobserver.observe(element);
    })
+
+  const navigationMenu = document.getElementById('mobile-menu')! as HTMLElement; 
+
+   const  displayMenuB = () => {
+    navigationMenu.classList.remove('hidden');
+   }
+
+   const  hideMenuB = () => {
+    navigationMenu.classList.add('hidden');
+   }

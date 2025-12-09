@@ -25,4 +25,11 @@ scrollUp.forEach(element => {
 scrollSide.forEach(element => {
     sideobserver.observe(element);
 });
+const navigationMenu = document.getElementById('mobile-menu');
+const displayMenuB = () => {
+    navigationMenu.classList.remove('hidden');
+};
+const hideMenuB = () => {
+    navigationMenu.classList.add('hidden');
+};
 //# sourceMappingURL=book.js.map

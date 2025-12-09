@@ -25,3 +25,13 @@ scrollUpAnimationContactSection.forEach(element => {
 scrollSideAnimationContactSection.forEach(element => {
     observerSide.observe(element);
 })
+
+const navMenuContact = document.getElementById('mobile-menu')! as HTMLElement;
+
+const displayMenuC = () => {
+    navMenuContact.classList.remove('hidden');
+}
+
+const hideMenuC = () => {
+    navMenuContact.classList.add('hidden');
+}

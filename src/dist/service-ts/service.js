@@ -27,4 +27,11 @@ scrollAnimationRight.forEach(elment => {
 scrollAnimationUp.forEach(elment => {
     upObserver.observe(elment);
 });
+const menu = document.getElementById("mobile-menu");
+function hideMenuS() {
+    menu.classList.add("hidden");
+}
+function displayMenuS() {
+    menu.classList.remove("hidden");
+}
 //# sourceMappingURL=service.js.map

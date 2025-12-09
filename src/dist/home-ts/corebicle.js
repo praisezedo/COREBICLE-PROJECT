@@ -42,8 +42,11 @@ const leftObserver = new IntersectionObserver(entries => {
 scrollLeftAnimation.forEach(element => {
     leftObserver.observe(element);
 });
-// BOOK BUTTON 
-bookBtn.addEventListener('click', () => {
-    window.location.href = './booking/book.html';
-});
+const navMenu = document.getElementById('mobile-menu');
+function displayMenu() {
+    navMenu.classList.remove('hidden');
+}
+function hideMenu() {
+    navMenu.classList.add('hidden');
+}
 //# sourceMappingURL=corebicle.js.map

@@ -44,11 +44,14 @@ scrollLeftAnimation.forEach(element => {
     leftObserver.observe(element);
 });
 
-// BOOK BUTTON 
+    const navMenu = document.getElementById('mobile-menu')! as HTMLElement;
 
-bookBtn.addEventListener('click' , () => {
- window.location.href = './booking/book.html';
-})
+function displayMenu() {
+    navMenu.classList.remove('hidden');
+}
 
+function hideMenu() {
+    navMenu.classList.add('hidden');
+}
 
 
