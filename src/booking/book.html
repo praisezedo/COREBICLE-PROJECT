@@ -12,11 +12,7 @@
     <!--nav menu section-->
         <nav id="mobile-menu" class="fixed top-0 left-0  w-full h-full  backdrop-blur-lg z-200 hidden items-center flex-column justify-center">
                 <span class="flex items-center space-x-2 absolute top-5 left-5">
-<svg  height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12">
-<polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="red" stroke-width="7" fill="none"/>
-<path d="M50 5 Q50 50 50 95" stroke="red" stroke-width="7" fill="none" stroke-linecap="round"/>
-</svg>
-<h1 class="text-[40px] font-bold text-red-700 text-shadow-lg">Corebicle</h1>
+<img src="../corebicleslogo/corebicleslogo.svg" alt="corebicleslogo">
 </span>
             <button onclick="hideMenuB()" class="absolute top-5 right-5"><i class="fa-solid fa-xmark text-[2rem] text-red-700"></i></button>
            <div class="flex-col flex items-center justify-center text-center gap-[30px] pt-[200px]">
@@ -29,11 +25,7 @@
 <!--Header secton-->
 <header class="flex justify-between text-center items-center p-3 mb-black  border-b border-black fixed top-0 left-0 right-0 bg-white z-100">
     <span class="flex text-center space-x-2 items-center leading-none">
-<svg  height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-10 sm:h-10">
-<polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="red" stroke-width="7" fill="none"/>
-<path d="M50 5 Q50 50 50 95" stroke="red" stroke-width="7" fill="none" stroke-linecap="round"/>
-</svg>
-<h1 class="text-[40px] font-bold text-red-700 text-shadow-lg text-center leading-none">Corebicle</h1>
+<a href="../index.html"><img src="../corebicleslogo/corebicleslogo.svg" alt="corebicleslogo"></a>
 </span>
 <nav class=" lg:flex gap-[20px] hidden">
 <a href="../index.html" class="font-bold text-2xl hover:text-red-700 transition-all">Home</a>
@@ -44,12 +36,21 @@
 <a href="../booking/book.html"><button class="lg:block hidden bg-red-700 text-white font-bold rounded-[10px] border-none p-3 hover:bg-red-300 transition-all duration-[1s] hover:cursor-pointer" id="book-btn">Book Now</button></a>
 <button onclick="displayMenuB()" class="md:block lg:hidden"><i class="fa-solid fa-bars text-red-700 text-[2rem]"></i></button>
 </header>
+
+<!--Click popup-->
+<div class="hidden flex inset-0 items-center text-center fixed justify-center z-300 backdrop-blur-lg transition-all duration-700" id="popup">
+    <div class="flex-col bg-white p-[30px] border-2  border-red-700 rounded-[20px]">
+ <p class="font-bold lg:text-[2rem] md:text-[1.8rem] sm:text-[1.5rem]">Sorry I'm Not a Backend Dev 😁</p>  
+ <button id="close-popup" class="border-2 border-red-700 font-bold p-[10px] mt-[30px] rounded-[10px] hover:bg-red-700">Close</button> 
+</div>
+</div>
 <!--form secion -->
 <section class="border-1 border-gray-300 px-[20px] py-[30px] lg:max-w-[1000px] md:max-w-[700px] sm:max-w-[500px] mx-auto rounded-[20px] mt-[170px] mb-[100px] shadow-lg justify-center">
 <form class="justify-center flex-column text-center items-center scroll-animation-up translate-y-20 transition-all duration-[2s] opacity-0">
 <h1 class="font-bold lg:text-[3rem] md:text-[2.5rem] sm:text-[2rem] my-[10px]">Book Your WorkSpace</h1>
 <p class="my-[10px] text-gray-500 lg:text-[1.1rem] md:text-[1rem] sm:text-[0.95rem]">Reserve your professional space with Corebicle today.</p>
 </div>
+
 <div class="flex-column justify-center items-center flex-column text-center">
 <h1 class="font-bold lg:text-[2rem] md:text-[1.8rem] sm:text-[1.5rem] my-[40px]">Workspace Details</h1>
 <div class="justify-center items-center flex-column text-center">
@@ -60,58 +61,50 @@
 <option value="premium-space">Premium Space</option>
 <option value="private-office">Private Office</option>
 </select>
-
+<h1 class="font-bold text-[1.2rem] my-[10px]">Suscription Plan</h1>
+<select name="plan" id="plan" class="border-1 border-gray-300 rounded-[10px] p-[10px] lg:w-[500px] md:w-[400px] sm:w-[300px] mx-auto mb-[40px]">
+    <option value="daily">Daily Plan</option>
+    <option value="monthly">Monthly Plan</option>
+    <option value="yearly">Yearly Plan</option>
+</select>
 <div class="lg:flex md:flex sm:flex-column gap-[40px] text-center justify-center">
     <div class="grid grid-cols-1 gap-[20px] text-center justify-center"> 
-     <label for="amount" class="">Amount</label>
-    <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[300px] mx-auto" type="text" name="amount" id="amount" placeholder="Amount" readonly>
-</div>
-<div class="grid grid-cols-1 gap-[20px]">
     <label for="payment-currency">Currency</label>
     <select class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[300px] mx-auto" name="currency" id="currency">
         <option value="naira">₦ - Naira</option>
-        <option value="dollars">$ - Dollars</option>
-        <option value="yen">¥ - Yen</option>
+        <option value="dollar">$ - Dollars</option>
     </select> 
+</div>
+<div class="grid grid-cols-1 gap-[20px]">
+         <label for="amount" class="">Amount</label>
+    <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[300px] mx-auto" type="text" name="amount" id="amount" placeholder="Amount" readonly>
 </div>
 </div>
 
 </div>
 </div>
+
 <div class="justify-center items-center flex-column text-center my-[40px]">
-<h1 class="font-bold text-[1.2rem] my-[10px] my-[20px]">Booking Duration</h1>
-<div class="grid grid-cols-3 gap-[15px]">
-    <div class="flex-column">
-        <h1>Date</h1>
-        <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="date" id="date-input">
-    </div>
-    <div>
-        <h1>Start Time</h1>
-        <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="text" placeholder="e.g 09:00 AM">
-    </div>
-    <div>
-        <h1>End Time</h1>
-        <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="text" placeholder="e.g 09:00 PM">
-    </div>
-</div>
 <div class="flex-column">
     <h1 class="font-bold text-[1.2rem] my-[30px]">Your Contact Information</h1>
-    <div class="grid grid-cols-2">
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
         <div>
             <h1 class="my-[20px]">Full Name</h1>
             <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="text" placeholder="Your Full Name">
         </div>
-        <div>
-            <h1 class="my-[20px]">Email Address</h1>
-            <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="email" placeholder="john.doe@example.com">
+        <div class="grid grid-cols-1 item-center text-center justify-center">
+            <h1 class="my-[20px]" >Email Address</h1>
+             <small  class="text-red-700 font-bold" id="email-result"></small>
+            <input id="email-input" class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[250px]" type="email" placeholder="john.doe@example.com">
         </div>
-        <div class="item-center text-center justify-center flex-column">
+        <div class="item-center text-center justify-center grid grid-cols-1">
             <h1 class="my-[20px]">Phone Number</h1>
-            <input class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[300px]"type="tel" placeholder="+1234567890 OR +2345678901011">
+            <small class="text-red-700 font-bold" id="phone-result"></small>
+            <input id="phone-input" class="border-1 border-gray-300 rounded-[10px] p-[10px] w-[300px]"type="tel" placeholder="+1234567890 OR +2345678901011">
         </div>
     </div>
 
-    <button class="bg-red-700 text-white p-[10px] rounded-[10px] my-[40px] hover:bg-red-300 transition-all hover:cursor-pointer">Confirm Booking</button>
+    <button id="bookbtn" class="bg-red-700 text-white p-[10px] rounded-[10px] my-[40px] hover:bg-red-300 transition-all hover:cursor-pointer">Confirm Booking</button>
 </div>
 </form>
 </section>
@@ -120,11 +113,7 @@
     <div class="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2">
 <div class="p-[10px] mb-[30px] -translate-x-20 opacity-0 duration-[2s] transition-all scroll-animation-side">
     <span class="flex items-center space-x-1 justify-center leading-none">
-<svg  height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-shadow-lg top-0 buttom-0">
-<polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="red" stroke-width="7" fill="none"/>
-<path d="M50 5 Q50 50 50 95" stroke="red" stroke-width="7" fill="none" stroke-linecap="round"/>
-</svg>
-<h1 class="lg:text-[40px] md:text-[20px] sm:text-[25px] font-bold text-red-700 text-shadow-lg my-[10px] leading-none">Corebicle</h1>
+<img src="../corebicleslogo/corebicleslogo.svg" alt="corebicleslogo">
 </span>
 
 <p class="justify-center sm:max-w-[150px] sm:mx-auto">Your dedicated space for productivity and innovation.</p>

@@ -4,6 +4,7 @@ const scrollSideAnimation = document.querySelectorAll<HTMLDivElement>('.scroll-a
 const scrollLeftAnimation = document.querySelectorAll<HTMLDivElement>('.scroll-animate-left');
 
 const bookBtn = document.getElementById('book-btn')! as HTMLButtonElement;
+// scroll up animation observer
  const observer = new IntersectionObserver(entries => {
 entries.forEach(entry => {
     if(entry.isIntersecting){
@@ -34,8 +35,10 @@ sideObserver.observe(element);
  const leftObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
+
             entry.target.classList.remove("opacity-0","translate-x-20");
             entry.target.classList.add("opacity-100","translate-x-0");
+
         }
     })
 });
@@ -46,6 +49,8 @@ scrollLeftAnimation.forEach(element => {
 
     const navMenu = document.getElementById('mobile-menu')! as HTMLElement;
 
+
+// display menu function
 function displayMenu() {
     navMenu.classList.remove('hidden');
 }
@@ -53,5 +58,25 @@ function displayMenu() {
 function hideMenu() {
     navMenu.classList.add('hidden');
 }
+
+// load background image
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.getElementById("home");
+
+  if (!section) return; 
+
+  const bgUrl = section.getAttribute("data-bg");
+  if (!bgUrl) return;
+
+  const img = new Image();
+  img.src = bgUrl;
+
+  img.onload = () => {
+    section.style.backgroundImage = `url('${bgUrl}')`;
+    section.classList.add("fade-in");
+  };
+});
+
+
 
 

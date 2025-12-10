@@ -3,3 +3,23 @@
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+ .animate-spin-slow {
+        animation: spin 3s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    #loader .fade-out {
+        opacity: 0;
+        transition: opacity 0.8s ease;
+        pointer-events: none;
+    }
+
+    .paused {
+      opacity: 0 !important;
+      pointer-events: none !important;
+      transform:  translate(20px) !important;
+      transition: none !important;
+    }
