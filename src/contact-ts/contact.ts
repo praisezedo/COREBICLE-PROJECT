@@ -35,3 +35,42 @@ const displayMenuC = () => {
 const hideMenuC = () => {
     navMenuContact.classList.add('hidden');
 }
+
+const emailValue = document.getElementById('email')! as HTMLInputElement;
+const emailResultC = document.getElementById('email-result')! as HTMLElement;
+
+const validateEmailC = (email: string) => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/gm;
+    if (emailPattern.test(email)) {
+        emailResultC.textContent = null;
+    }
+    else {
+        emailResultC.textContent = "Please enter a valid email address.";
+    }
+}
+
+emailValue.addEventListener('input' , () => {
+    validateEmailC(emailValue.value);
+})
+
+//popup section
+const popup = document.getElementById('popup')! as HTMLDivElement;
+const closePopupBtn = document.getElementById('close-popup')! as HTMLButtonElement;
+const contactBtn = document.getElementById('contact-btn')! as HTMLButtonElement;
+
+const displayPopupC = () => {
+    popup.classList.remove('hidden');
+}
+
+const hidePopupC = () => {
+    popup.classList.add('hidden');
+}
+
+contactBtn.addEventListener('click' , () => {
+    displayPopupC();
+});
+
+closePopupBtn.addEventListener('click' , () => {
+    hidePopupC();
+    window.location.reload();
+});

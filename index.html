@@ -23,7 +23,7 @@
     </div>
         </nav>
 <!--Header secton-->
-<header class="flex justify-between text-center items-center p-3 mb-black  border-b border-black fixed top-0 left-0 right-0 bg-white z-100">
+<header class="overflow-x-hidden  flex justify-between text-center items-center p-3 mb-black border-b border-black fixed top-0 left-0 right-0 bg-white z-100">
     <span class="flex text-center space-x-2 items-center leading-none">
 <a href="../src/index.html"><img src="./src/corebicleslogo/corebicleslogo.svg" alt="corebicleslogo"></a>
 </span>
@@ -37,24 +37,24 @@
 <button onclick="displayMenu()" class="md:block lg:hidden"><i class="fa-solid fa-bars text-red-700 text-[2rem]"></i></button>
 </header>
 <!--Welcome section-->
-<section id="home" class="bg-center bg-cover bg-no-repeat w-full"  data-bg="./src/images/corebicle-mordernworkspace.jpg"> 
+<section id="home" class="bg-center bg-cover bg-no-repeat w-full sm:left-0 sm:right-0 justify-center"  data-bg="./src/images/corebicle-mordernworkspace.jpg"> 
 <div class="bg-black/70 text-center items-center justify-center pt-[120px] pb-[100px]">
     <div class="flex-column">
-        <h1 class="font-bold text-white lg:text-[5rem] md:text-[3.5rem] sm:text-[2rem] py-[20px] text-shadow-lg  max-w-[1500px] mx-auto text-center justify-center -translate-x-20 opacity-0 duration-[2s] transition-all scroll-animate-side">Welcome to Corebicle<br><span class="text-red-700">Your Productivity Hotspot.</span></h1>
-        <p class="text-[white] font-bold lg:text-[1.5rem] md:text-[1rem] sm:text-[0.9rem] sm:max-w-[400px] text-shadow-lg lg:max-w-[800px] md:max-w-[700px]  mx-auto translate-x-20 opacity-0 duration-[2s] transition-all scroll-animate-left">
+        <h1 class="font-bold text-white lg:text-[5rem] md:text-[3.5rem] sm:text-[1.5rem] py-[20px] text-shadow-lg  lg:max-w-[1500px] md:max-w-[1000px] sm:max-w-[ 300px] mx-auto text-center justify-center translate-y-20 opacity-0 duration-[2s] transition-all scroll-animate">Welcome to Corebicle<br><span class="text-red-700">Your Productivity Hotspot.</span></h1>
+        <p class="text-[white] font-bold lg:text-[1.5rem] md:text-[1rem] sm:text-[0.6rem] sm:max-w-[300px] text-shadow-lg lg:max-w-[800px] md:max-w-[700px]  mx-auto translate-y-20 opacity-0 duration-[2s] transition-all scroll-animate">
         Discover flexible and inspiring workspaces designed to boost your productivity. 
        With high-speed internet and reliable electricity, Corebicle provides the perfect environment for freelancers and remote professionals.
         </p>
     </div>
-    <div class="flex text-center items-center justify-center gap-[50px] mt-[70px]">
-      <a href="./src/services/service.html"><button class="px-[20px] py-[10px]   font-bold text-white bg-red-700 rounded-[10px] my-[50px] hover:bg-red-300 transition-all hover:cursor-pointer opacity-0 -translate-x-20 transition-all duration-[2s] scroll-animate-side">Explore Services</button></a>
-        <a href="./src/booking/book.html"> <button class="px-[20px] py-[10px] font-bold bg-transparent rounded-[10px] my-[50px] border-5 border-red-700 hover:opacity-20 text-white transition-all hover:cursor-pointer opacity-0 translate-x-20 transition-all duration-[2s] scroll-animate-left">Book Space</button></a>
+    <div class="flex text-center items-center justify-center lg:gap-[50px] md:gap-[50px] sm:gap-[20px] lg:mt-[70px] md:mt-[50px] sm:mt-[20px]">
+      <a href="./src/services/service.html"><button class="sm:text-[0.7rem] lg:px-[20px] md:px-[20px] sm:lg:px-[20px] py-[10px]   font-bold text-white bg-red-700 rounded-[10px] my-[50px] hover:bg-red-300 transition-all hover:cursor-pointer opacity-0 translate-y-20 transition-all duration-[2s] scroll-animate">Explore Services</button></a>
+        <a href="./src/booking/book.html"> <button class="sm:text-[0.7rem] lg:px-[20px] md:px-[20px] sm:lg:px-[20px] py-[10px] font-bold bg-transparent rounded-[10px] my-[50px] border-5 border-red-700 hover:opacity-20 text-white transition-all hover:cursor-pointer opacity-0 translate-y-20 transition-all duration-[2s] scroll-animate">Book Space</button></a>
     </div>
 </div>
 </section>   
 <!--service display section-->
-<section class="flex-column items-center justify-center text-center my-[100px]">
-<h1 class="lg:text-[3rem] md:text-[2.5rem] sm:text-[2rem] font-bold my-[30px] -translate-x-20 opacity-0 duration-[2s] transition-all scroll-animate-side">Our Core Services</h1>
+<section class="sm:left-0 sm:right-0 flex-column items-center justify-center text-center my-[100px]">
+<h1 class="lg:text-[3rem] md:text-[2.5rem] sm:text-[2rem] font-bold my-[30px] translate-y-20 opacity-0 duration-[2s] transition-all scroll-animate">Our Core Services</h1>
 <div class="lg:flex lg:gap-[50px] md:grid md:grid-cols-2 md:gap-[30px] sm:grid sm:grid-cols-1 sm:gap-[40px] my-[50px] lg:px-[100px] md:px-[70px] sm:px-[20px]">
 <div class="max-w-[400px] mx-auto rounded-[30px] border-none p-[20px] shadow-2xl shadow-black-300 hover:scale-110 transition-transform opacity-0 translate-y-20 transition-all duration-[2s] scroll-animate">
 <i class="fas fa-laptop text-red-700 bg-gray-300 p-[10px] rounded-full" style="font-size: 64px;"></i>
@@ -80,8 +80,8 @@ Uninterrupted power for all your devices, so you can focus on your work without 
 </div>
 </section>
 <!--Reason section-->
-<section class="flex-column items-center text-center">
-<h1 class="lg:text-[3rem] md:text-[2.5rem] sm:text-[2rem] font-bold -translate-x-20 opacity-0 duration-[2s] transition-all scroll-animate-side">Why Choose Corebicle?</h1>
+<section class="flex-column items-center text-center sm:left-0 sm:right-0 justify-center">
+<h1 class="lg:text-[3rem] md:text-[2.5rem] sm:text-[2rem] font-bold translate-y-20 opacity-0 duration-[2s] transition-all scroll-animate">Why Choose Corebicle?</h1>
 <div class="grid lg:grid-cols-3 gap-[30px] my-[40px] md:grid-cols-2 sm:grid-cols-1 lg:px-[100px] md:px-[70px] sm:px-[20px]">
     <div class="shadow-2xl shadow-black-300 rounded-[30px]  md:px-[30px] sm:p-[20px] sm:max-w-[400px] sm:mx-auto hover:scale-110 transition-transform opacity-0 translate-y-20 transition-all duration-[2s] scroll-animate">
   <i class="fas fa-volume-mute text-red-700 bg-gray-300 p-[10px] rounded-full" style="font-size: 64px;"></i> 
@@ -120,19 +120,19 @@ Uninterrupted power for all your devices, so you can focus on your work without 
 </div>
 </section>
 
-<section class="flex-column items-center text-center justify-center my-[70px]">
-<div class="flex-column items-center text-center -translate-x-20 opacity-0 duration-[2s] transition-all scroll-animate-side">
+<section class="sm:left-0 sm:right-0 flex-column items-center text-center justify-center my-[70px]">
+<div class="flex-column items-center text-center translate-y-20 opacity-0 duration-[2s] transition-all scroll-animate">
 <h1 class="lg:text-[3rem] md:text-[2.5rem]  sm:text-[1.7rem] font-bold my-[20px]">Ready to Elevate Productivity?</h1>
 <p class="lg:text-[1rem] md:text-[1rem] sm:max-w-[400px] sm:mx-auto my-[20px]">join growing community of professionals who thrive in Corebicle's innovative and supportive workspace.</p>
 </div>
-<div class="flex gap-[100px] items-center text-center justify-center opacity-0 translate-x-20 duration-[2s] transition-all scroll-animate-left">
+<div class="flex gap-[100px] items-center text-center justify-center opacity-0 translate-y-20 duration-[2s] transition-all scroll-animate">
 <a href="./src/services/service.html"><button class="bg-red-700 text-white font-bold p-[10px] border-none rounded-[10px] hover:bg-red-300 transition-all duration-[1s] hover:cursor-pointer">Explore Service</button></a>
 <a href="./src/booking/book.html"><button class="bg-white text-black font-bold p-[10px] border-2 border-red-700 rounded-[10px] hover:opacity-25 transition-all duration-[1s] hover:cursor-pointer">Book Your Space</button></a>
 </div>
 </section>
 <section class="flex-column items-center text-center justify-center mt-[70px] bg-gray-100 p-[30px]">
     <div class="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2">
-<div class="p-[10px] mb-[30px] -translate-x-20 opacity-0 duration-[2s] transition-all scroll-animate-side">
+<div class="p-[10px] mb-[30px] translate-y-20 opacity-0 duration-[2s] transition-all scroll-animate">
     <span class="flex items-center space-x-1 justify-center leading-none">
 <img src="./src/corebicleslogo/corebicleslogo.svg" alt="corebicleslogo">
 </span>
@@ -154,7 +154,7 @@ Uninterrupted power for all your devices, so you can focus on your work without 
     <p class="text-[1.1rem] mb-[10px]">Internet Connection</p>
     <p class="text-[1.1rem] mb-[10px]">Electricity Supply</p>
 </div>
-<div class="flex-column translate-x-20 opacity-0 duration-[2s] transition-all scroll-animate-left">
+<div class="flex-column translate-y-20 opacity-0 duration-[2s] transition-all scroll-animate">
     <h4 class="mb-[20px] font-bold text-[1.5rem] sm:text-[1.2rem]">Follow Us</h4>
     <nav class="grid grid-cols-4 gap-[4px]">
         <a href="#" class="hover:scale-110 duration-300 sm:scale-70 lg:scale-100"><i class="fa-brands fa-facebook text-red-700 rounded-full transition-all" style="font-size: 40px;"></i></a>
@@ -165,7 +165,7 @@ Uninterrupted power for all your devices, so you can focus on your work without 
 </div>
     </div>
 </section>
-<footer class="py-[20px] bg-gray-100 border-t-2 border-black">
+<footer class="py-[20px] bg-gray-100 border-t-2 border-black justify-center items-center text-center">
     <div class="flex items-center text-center justify-center mt-[10px]"><p>&copy; 2025 Corebicle. All right reserved.</p></div> 
 </footer>
 <script src="./src/dist/home-ts/corebicle.js"></script>

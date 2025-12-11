@@ -128,6 +128,8 @@ function updateAmount() {
   }
 }
 
+updateAmount();
+
 workSpaceInput.addEventListener('change', updateAmount);
 currencyInput.addEventListener('change', updateAmount);
 suscriptionPlanInput.addEventListener('change', updateAmount);
