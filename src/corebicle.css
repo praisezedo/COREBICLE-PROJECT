@@ -16,10 +16,44 @@
         transition: opacity 0.8s ease;
         pointer-events: none;
     }
-
-    .paused {
-      opacity: 0 !important;
-      pointer-events: none !important;
-      transform:  translate(20px) !important;
-      transition: none !important;
+    @media (max-width: 414px) {
+  .welcome-text-p {
+   font-size: 10px;
+   padding: 0px 20px;
+     }
+     .welcome-text-h {
+       font-size: 25px;
+     }
+     .welcome-button {
+     gap: 10px;   
+     }
+     .welcome-button button {
+        font-size: 12px;
+        padding: 10px 10px;
+     }
+     .service-h {
+        font-size: 25px;
+     }
+     .reason-h {
+        font-size: 25px;
+     }
+     .reason-d {
+        padding: 20px;
+     }
+     .ready-t h1  {
+        font-size: 20px;
+     }
+      .ready-t p {
+        font-size: 12px;
+        padding: 0px 20px;
+      }
+      .ready-b {
+        gap: 20px;
+        font-size: 12px;
+      }
+      .footer-l a {
+        font-size: 10px;
+        gap: 10px;
+      }
     }
+        

@@ -1,1 +1,39 @@
 @import 'tailwindcss';
+
+@media (max-width: 414px) {
+    .contact-s  {
+       padding: 20px;
+    }
+    .contact-d .contact-t1  {
+        font-size: 30px;
+    }
+    .contact-d .contact-t2 {
+        font-size: 14px;
+    }
+     .contact-t3 {
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact-o {
+        display: flex;
+        gap: 30px;
+       scale: 0.8; 
+}
+  .contact-l h1  {
+     font-size: 20px;
+ }
+  .contact-l  div a {
+    scale: 0.8;
+ }
+ .contact-f {
+    border: none;
+    box-shadow: none;
+ }
+ .contact-f h1 {
+    font-size: 25px;
+ }
+ .contact-f p {
+     font-size: 12px;
+ }
+}

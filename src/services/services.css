@@ -1,1 +1,30 @@
 @import 'tailwindcss';
+
+@media (max-width: 414px) {
+    .service-wt h1 {
+        font-size: 25px;
+    }
+    .service-wt p {
+        font-size: 12px;
+        padding: 0px 20px;
+    }
+    .service-s {
+        padding: 0px 20px;
+    }
+    .service-s h1 {
+        font-size: 20px;
+    }
+    .service-r h1 {
+        font-size: 20px;
+    }
+    .service-r p {
+        font-size: 12px;
+    }
+    .service-r button {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .service-r {
+        padding: 0px 20px;
+    }
+}

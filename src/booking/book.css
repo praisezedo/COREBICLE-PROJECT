@@ -1,1 +1,20 @@
 @import 'tailwindcss';
+
+
+@media (max-width: 414px) {
+    .book-s  .book-t1 {
+        font-size: 25px;
+    }
+    .book-s .book-t2 {
+        font-size: 12px;
+    }
+    .book-s select {
+        width: 300px;
+    }
+    .book-s input {
+        width: 300px;
+    }
+    section {
+        border: none;
+    }
+}
